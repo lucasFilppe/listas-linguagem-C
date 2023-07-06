@@ -44,7 +44,11 @@ int main() {
 
   printf("String sem vogais: %s\n", palavra);
 
+  char* segundaPalavra = alocaString(n);
+  printf("String com vogais: %s\n", segundaPalavra);
+
   free(palavra); // Libera a memória alocada
+  free(segundaPalavra);
 
   return 0;
 }
